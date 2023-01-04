@@ -1,4 +1,4 @@
-# MyHeritage AI Time Machine Image Scraper
+# MyHeritage AI Time Machine Image Downloader
 
 This quick and dirty Typescript app will allow you to bulk download all of your
 MyHeritage AI Time Machine images.
@@ -13,21 +13,20 @@ MyHeritage AI Time Machine images.
 
 - Click the request name, click the `Response` tab in the right pane, optionally click `{}` to pretty up the JSON results, then press CTRL-A to select all the JSON and CTRL-C to copy it. Paste the results into a new file, e.g. `nick.json`.
 
-- Save this new JSON file in the `build/src` folder.
-
-## Modify `index.ts`:
+## Modify `index.ts`
 
 - After cloning this repo, modify the filename in the `json` to reflect your source file, e.g. `./nick.json`
 - Modify the path in the `destinationFolder` variable in `index.ts` to reflect the folder you want to save images to.
 - Optionally modify the `len` variable if you just want to test with a couple of images instead of downloading all ~800 images.
 
-## From the root folder:
+## From the root folder
 
 - Install dependencies (first time only): `npm i`
 - Compile the app: `npx tsc -w`
 
-## From the build/src folder:
+## From the build/src folder, which is created after compiling
 
+- Move the JSON source file into the `build/src` folder.
 - Run the app: `node index.js`
 - Wait patiently for the images to download.
 
@@ -41,5 +40,5 @@ If any images are skipped, a log should print out in the console once the downlo
 
 ## Resources
 
-[MyHeritage AI Time Machine](https://www.myheritage.com/ai-time-machine/)
-[Quickstart Typescript new project](https://www.digitalocean.com/community/tutorials/typescript-new-project)
+- [MyHeritage AI Time Machine](https://www.myheritage.com/ai-time-machine/)
+- [Quickstart Typescript new project](https://www.digitalocean.com/community/tutorials/typescript-new-project)

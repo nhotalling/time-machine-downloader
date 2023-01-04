@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "build",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2019"
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+}
